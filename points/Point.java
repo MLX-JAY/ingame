@@ -11,8 +11,8 @@ public class Point
     }
     void move (int dx , int dy)
     {
-        this.x=+dx;
-        this.y=+y;
+        x+=dx;
+        y+=dy;
     }
     public String toString()
     {

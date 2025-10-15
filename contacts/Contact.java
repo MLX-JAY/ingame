@@ -14,4 +14,16 @@ public class Contact {
     {
         return name+" "+mail+" "+phone + "\n ";
     }
+    String getMail() 
+    {
+        return mail;
+    }
+    String getPhone() 
+    {
+        return phone;
+    }
+    String getName() 
+    {
+        return name;
+    }
 }
