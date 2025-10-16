@@ -51,9 +51,16 @@ public class Repertoire
     }
     public void supprimer (Contact c)
     {
-        if (this.rechercheNom(c.getName()))
+        if (rechercheNom(c.getName())!=null)
         {
-
+            for (int i=0;i<size;i++)
+            {
+                if (tab[i].equals(c))
+                {
+                    tab[i]=tab[size-1];
+                    size--;
+                }
+            }
         }
     }
 }
