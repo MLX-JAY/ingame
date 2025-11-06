@@ -26,4 +26,11 @@ public class Contact {
     {
         return name;
     }
+    public boolean equals (Object o)
+    {
+        if (this==o) return true;
+        if (o==null || getClass()!=o.getClass()) return false;
+        Contact contact=(Contact)o;
+        return (contact.getName().equals(name) && contact.getMail().equals(mail) && contact.getPhone().equals(phone));
+    }
 }

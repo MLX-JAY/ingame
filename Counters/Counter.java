@@ -7,7 +7,7 @@ public class Counter
     {
         this.value=value;
     }
-    public void increment ()
+    public void increment () 
     {
         value++;
     }
